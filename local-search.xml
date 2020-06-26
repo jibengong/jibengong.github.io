@@ -4,6 +4,29 @@
   
   
   <entry>
+    <title>how to completely uninstall docker</title>
+    <link href="/2020/06/26/how-to-uninstall-docker/"/>
+    <url>/2020/06/26/how-to-uninstall-docker/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>step1:</p><pre><code class="hljs routeros">sudo apt-<span class="hljs-builtin-name">get</span> autoremove docker docker-ce docker-engine  docker.io  containerd runc</code></pre><p>step2:</p><pre><code class="hljs 1c">dpkg -l <span class="hljs-string">| grep docker</span></code></pre><p>step3:</p><pre><code class="hljs nginx"><span class="hljs-attribute">dpkg</span> -l |grep<span class="hljs-regexp"> ^rc|awk</span> <span class="hljs-string">'&#123;print <span class="hljs-variable">$2</span>&#125;'</span> |sudo xargs dpkg -P</code></pre><p>step4:</p><pre><code class="hljs routeros">sudo apt-<span class="hljs-builtin-name">get</span> autoremove docker-ce-*</code></pre><p>step5:</p><pre><code class="hljs crystal">sudo rm -rf /etc/systemd/system/docker.service.dsudo rm -rf /var/<span class="hljs-class"><span class="hljs-keyword">lib</span>/<span class="hljs-title">docker</span></span></code></pre><p>check:</p><pre><code class="hljs ada">docker <span class="hljs-comment">--version</span></code></pre>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>linux</tag>
+      
+      <tag>ubuntu</tag>
+      
+      <tag>docker</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>python note01</title>
     <link href="/2020/03/22/python-note01/"/>
     <url>/2020/03/22/python-note01/</url>
@@ -75,7 +98,7 @@
     <link href="/2020/02/01/aplayer-test/"/>
     <url>/2020/02/01/aplayer-test/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>    <div id="aplayer-UyqpEarB" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="7400628802" data-server="tencent" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"    ></div>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>    <div id="aplayer-uxJvcdop" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="7400628802" data-server="tencent" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"    ></div>]]></content>
     
     
     
